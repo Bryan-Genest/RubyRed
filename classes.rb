@@ -34,12 +34,12 @@ y = gets.chomp
 
 case operation
 
-when "add"
-    puts c.addition(x.to_i,y.to_i)
-when "sub"
-    puts c.subtraction(x.to_i,y.to_i)
-when "mult"
-    puts c.multiplication(x.to_i,y.to_i)
-when "div"
-    puts c.divide(x.to_i,y.to_i)
-end
+    when "add"
+        puts c.addition(x.to_i,y.to_i)
+    when "sub"
+        puts c.subtraction(x.to_i,y.to_i)
+    when "mult"
+        puts c.multiplication(x.to_i,y.to_i)
+    when "div"
+        puts c.divide(x.to_i,y.to_i)
+    end
