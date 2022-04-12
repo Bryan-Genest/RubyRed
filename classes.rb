@@ -1,15 +1,6 @@
 #classes.rb
 
-class Calculator(operation,x,y)
-    @operation = operation
-    @x = x
-    @y = y
-
-    def initialize(operation)
-        puts "Type: operation, x, y."
-
-        
-    end
+class Calculator
 
     def addition (x,y)
         return x + y
@@ -26,16 +17,29 @@ class Calculator(operation,x,y)
     def divide (x,y)
         return x / y
     end
-
-    case operation
-    when "add"
-        addition
-    when "sub"
-        subtraction
-    when "mult"
-        multiplication
-    when "div"
-        divide
 end
 
+c = Calculator.new
 
+puts 'Operation?'
+operation = gets.chomp
+
+puts 'x?'
+x = gets.chomp
+
+puts 'y?'
+y = gets.chomp
+
+
+
+case operation
+
+when "add"
+    puts c.addition(x.to_i,y.to_i)
+when "sub"
+    puts c.subtraction(x.to_i,y.to_i)
+when "mult"
+    puts c.multiplication(x.to_i,y.to_i)
+when "div"
+    puts c.divide(x.to_i,y.to_i)
+end
