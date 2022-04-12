@@ -14,6 +14,7 @@ movies = {
         puts'enter rating (1-4)'
         rating = gets.chomp
         movies[title.to_sym] = rating.to_i
+        
       else
         puts 'movie already in there'
       end
