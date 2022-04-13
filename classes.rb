@@ -1,6 +1,23 @@
-#classes.rb
-
 class Calculator
+    def initialize(op,x,y)
+        @op = op.to_s
+        @x = x.to_i
+        @y = y.to_i
+    end
+
+    def calc(op,x,y)
+
+        case op
+        when "add"
+            return c.addition(x.to_i,y.to_i)
+        when "sub"
+            return c.subtraction(x.to_i,y.to_i)
+        when "mult"
+            return c.multiplication(x.to_i,y.to_i)
+        when "div"
+            return c.divide(x.to_i,y.to_i)
+        end
+    end
 
     def addition (x,y)
         return x + y
@@ -19,10 +36,10 @@ class Calculator
     end
 end
 
-c = Calculator.new
+
 
 puts 'Operation?'
-operation = gets.chomp
+op = gets.chomp
 
 puts 'x?'
 x = gets.chomp
@@ -30,16 +47,6 @@ x = gets.chomp
 puts 'y?'
 y = gets.chomp
 
+c = Calculator.new
 
-
-case operation
-
-    when "add"
-        puts c.addition(x.to_i,y.to_i)
-    when "sub"
-        puts c.subtraction(x.to_i,y.to_i)
-    when "mult"
-        puts c.multiplication(x.to_i,y.to_i)
-    when "div"
-        puts c.divide(x.to_i,y.to_i)
-    end
+c.calc(op,x,y)
