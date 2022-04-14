@@ -1,2 +1,2 @@
 # RubyRed
- Ruby Scripts/projects
+ Ruby, and Ruby on Rails projects.
