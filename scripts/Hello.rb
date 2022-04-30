@@ -1,8 +1,8 @@
 movies = {
     Batman: 4,
   }
-  puts "Please type one of the following:"
-  puts "add, update, display, delete"
+  puts 'Please type one of the following:'
+  puts 'add, update, display, delete'
   choice = gets.chomp
   
   case choice
@@ -16,12 +16,12 @@ movies = {
         movies[title.to_sym] = rating.to_i
         
       else
-        puts 'movie already in there'
+        puts 'movie already exists'
       end
     when 'update'
       puts 'updated!'
     when 'display'
-      puts "Movies!"
+      puts 'Movies!'
     when 'delete'
       puts 'Deleted!'
   end
