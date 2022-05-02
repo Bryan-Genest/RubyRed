@@ -1,5 +1,5 @@
 #RubyRed
- Ruby, and Ruby on Rails projects.
+Ruby, and Ruby on Rails projects.
 
 
 'blog' is the beginner RoR project, follows:
